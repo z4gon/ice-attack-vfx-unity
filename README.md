@@ -1,5 +1,5 @@
 # Ice Attack VFX
-An ice attack vfx, 3D models for spikes and snow, programming to spawn in front of the character.
+An ice attack vfx, 3D models for spikes and snow.
 Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ## Features
@@ -11,8 +11,14 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 ## Screenshots
 
 ---
+## Ground Textures
 
 [Ice Attack VFX by Gabriel Aguiar](https://www.youtube.com/watch?v=gfOaGvNQ28U)
+
+![Ground Textures](./docs/1-ground-textures.gif)
+
+---
+
 [Burning Paper Effect by Gabriel Aguiar](https://www.youtube.com/watch?v=fgJf-gNq-1k)
 
 ---
@@ -31,15 +37,15 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
         1. We don't want a constant spawn rate, we need a burst.
         1. In the **Spawn** node of the VFX.
             1. Add a single burst component.
-            1. Set the amount of particles to 3, because we wan't it to have 3 stages.
+            1. Parametrize the amount of particles it will spawn.
 
     1. **Spawn Velocity and Position**
         1. We don't need velocity for the particles, they should stay stationed.
         1. In the **Initialize Particle** node of the VFX.
             1. Remove the velocity settings.
             1. Use a box shape for spawn position, with height 0, making it a plane.
-            1. Use a parameter to control the radius of the spawn shape
-            1. Set a lifetime of 3 seconds for particles.
+            1. Parametrize the radius of the spawn shape
+            1. Parametrize a lifetime of 3 seconds for particles.
 
     1. **Rendering**
         1. In the **Output Particle Quad** node of the VFX.
@@ -47,13 +53,13 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
             1. Remove the face camera plane component.
             1. **Size**
                 1. Remove size over life, but replace with a constant set size.
-                1. Make the size a parameter to control via code, each subsequent burst should be bigger.
+                1. Parametrize the size, each subsequent burst should be bigger.
             1. **Color**
                 1. Parametrize a color to be able to configure the VFX, using the set color component.
                 1. Keep color over life to be able to fade it out.
-                1. Make color over life to multiply the parametrized color, not override, so it blends.
+                1. Make color over life to have Alpha mode, so that it only affects the Alpha of the parametrized color.
         1. In the **Initialize Particle** node of the VFX.
-            1. Rotate the particles to make them parallel to the ground.
+            1. Rotate the particles 90 degrees to make them parallel to the ground.
 
     1. Group this system's components in the VFX Graph for readability.
 
