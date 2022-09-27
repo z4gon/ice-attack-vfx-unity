@@ -38,6 +38,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
         1. In the **Spawn** node of the VFX.
             1. Add a single burst component.
             1. Parametrize the amount of particles it will spawn.
+            1. Parametrize the delay, this will be used later for the 2nd and 3rd burst.
 
     1. **Spawn Velocity and Position**
         1. We don't need velocity for the particles, they should stay stationed.
@@ -61,7 +62,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
         1. In the **Initialize Particle** node of the VFX.
             1. Rotate the particles 90 degrees to make them parallel to the ground.
 
-    1. Group this system's components in the VFX Graph for readability.
+    1. Make the Ground Textures System a Sub Graph.
 
 1. **Snow Mesh**
 
