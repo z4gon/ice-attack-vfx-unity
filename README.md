@@ -5,8 +5,8 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 ## Features
 
 - [Ground Textures](#ground-textures)
-- [Snow Mesh](#snow-mesh)
 - [Spikes Mesh](#spikes-mesh)
+- [Snow Mesh](#snow-mesh)
 
 ## Screenshots
 
@@ -16,6 +16,13 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 [Ice Attack VFX by Gabriel Aguiar](https://www.youtube.com/watch?v=gfOaGvNQ28U)
 
 ![Ground Textures](./docs/1-ground-textures.gif)
+
+---
+## Spike Mesh
+
+### Blender 3D Modeling
+
+![Spike Mesh Modeling](./docs/2-spike-mesh.gif)
 
 ---
 
@@ -64,7 +71,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
     1. Make the Ground Textures System a Sub Graph.
 
-1. **Snow Mesh**
+1. **Spike Mesh**
 
     1. **Create the 3D Mesh in Blender**
         1. Start from a cylinder and shape it into a cone.
