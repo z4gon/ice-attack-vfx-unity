@@ -2,7 +2,7 @@
 An ice attack vfx, 3D models for spikes and snow, programming to spawn in front of the character.
 Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
-## Fatures
+## Features
 
 - [Ground Textures](#ground-textures)
 - [Snow Mesh](#snow-mesh)
