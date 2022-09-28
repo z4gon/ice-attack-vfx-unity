@@ -19,6 +19,10 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ![Ground Textures](./docs/1-ground-textures.gif)
 
+### Sub VFX Graph
+
+![Ground Textures Sub VFX Graph](./docs/graphs/ground-texture-sub-graph-vfx.png)
+
 ---
 ## Spike Mesh
 
@@ -33,9 +37,17 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 ![Dissolve Shader](./docs/3-dissolve-fresnel.gif)
 ![Dissolve Shader](./docs/4-spike-test.gif)
 
+### Shader Graph
+
+![Dissolve Fresnel Shader Graph](./docs/graphs/dissolve-fresnel-shader-graph.png)
+
 ### Spike VFX
 
 ![Spike VFX](./docs/5-spikes.gif)
+
+### Sub VFX Graph
+
+![Spike Sub VFX Graph](./docs/graphs/spikes-sub-graph-vfx.png)
 
 ---
 
@@ -49,11 +61,23 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ![Snow VFX](./docs/7-snow-spike-vfx.gif)
 
+### Sub VFX Graph
+
+![Snow Sub VFX Graph](./docs/graphs/snow-sub-graph-vfx.png)
+
 ---
 
 ## 3 Waves
 
 ![3 Waves](./docs/8-waves.gif)
+
+### Sub VFX Graph
+
+![Wave VFX Graph](./docs/graphs/wave-sub-graph-vfx.png)
+
+### Main VFX Graph
+
+![Main VFX Graph](./docs/graphs/main-vfx-graph.png)
 
 ---
 
