@@ -93,12 +93,17 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
             1. Set a small randomness to the life time.
 
     1. **Simple Dissolve Shader**
-        1. Using a random noise texture and an alpha clip.
-        1. Parametrize the color and dissolve amount.
+        1. Create a **VFX Shader Graph** (not to be confused with a Shader Graph)
+        1. Enable _Alpha Clipping_
+        1. If this were a traditional Shader Graph, you'd need to set the blend mode to opaque here, but we can do that later in the output mesh node.
+        1. Using a random noise to make the material dissolve.
+        1. Parametrize the color and alpha threshold.
         1. Add an fresnel effect and parametrize it too.
 
         1. In the **Output Particle Mesh** node of the VFX.
-            1. Assign the **Dissolve Shader** ShaderGraph Asset.
+            > NOTE: The integration between VFX Graph and Shader Graph [is still experimental](https://forum.unity.com/threads/vfx-particle-mesh-material.975813/), so, you need to [enable experimental features for Visual Effects](https://learn.unity.com/tutorial/integrate-shader-graph-into-visual-effect-graph) to be able to use this.
+            > Also, VFX Graph works using compute shaders, that means this will only work in URP compatible [devices that are also compute capable](https://forum.unity.com/threads/compute-shader-support-for-mobile-in-2022.1305024/).
+            1. Assign the **Dissolve Shader** VFX ShaderGraph Asset.
             1. Make the dissolve evolve over time using a custom curve.
 
     1. **Size and Scale**
