@@ -160,7 +160,7 @@ MonoBehaviour:
     x: 520
     y: -190
     width: 845
-    height: 1753
+    height: 1773
 --- !u!114 &114350483966674978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +180,8 @@ MonoBehaviour:
   m_UIPosition: {x: 941, y: -190}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
-  m_InputSlots: []
+  m_InputSlots:
+  - {fileID: 114350483966675056}
   m_OutputSlots: []
   m_Label: Spawn system
   m_Data: {fileID: 114350483966675050}
@@ -193,7 +194,7 @@ MonoBehaviour:
       slotIndex: 0
   loopDuration: 0
   loopCount: 0
-  delayBeforeLoop: 0
+  delayBeforeLoop: 1
   delayAfterLoop: 0
 --- !u!114 &114350483966674980
 MonoBehaviour:
@@ -289,8 +290,7 @@ MonoBehaviour:
       m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
         PublicKeyToken=b77a5c561934e089
   m_Direction: 0
-  m_LinkedSlots:
-  - {fileID: 114350483966675035}
+  m_LinkedSlots: []
 --- !u!114 &114350483966674983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   - {fileID: 114350483966675000}
   - {fileID: 114350483966675010}
   - {fileID: 114350483966675012}
-  m_UIPosition: {x: 941, y: 115}
+  m_UIPosition: {x: 941, y: 223}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
@@ -1956,8 +1956,8 @@ MonoBehaviour:
   - m_Id: 0
     linkedSlots:
     - outputSlot: {fileID: 114350483966675035}
-      inputSlot: {fileID: 114350483966674982}
-    position: {x: 764, y: 20}
+      inputSlot: {fileID: 114350483966675056}
+    position: {x: 761, y: -107}
     expandedSlots: []
     expanded: 0
 --- !u!114 &114350483966675035
@@ -1994,7 +1994,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
   m_Direction: 1
   m_LinkedSlots:
-  - {fileID: 114350483966674982}
+  - {fileID: 114350483966675056}
 --- !u!114 &114350483966675036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2120,7 +2120,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 114350483966675039}
       inputSlot: {fileID: 114350483966674981}
-    position: {x: 761, y: -31}
+    position: {x: 761, y: 16}
     expandedSlots: []
     expanded: 0
 --- !u!114 &114350483966675039
@@ -2588,3 +2588,38 @@ MonoBehaviour:
   needsComputeBounds: 0
   boundsMode: 0
   m_Space: 0
+--- !u!114 &114350483966675056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f780aa281814f9842a7c076d436932e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UIIgnoredErrors: []
+  m_Parent: {fileID: 0}
+  m_Children: []
+  m_UIPosition: {x: 0, y: 0}
+  m_UICollapsed: 1
+  m_UISuperCollapsed: 0
+  m_MasterSlot: {fileID: 114350483966675056}
+  m_MasterData:
+    m_Owner: {fileID: 114350483966674978}
+    m_Value:
+      m_Type:
+        m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      m_SerializableObject: 0.1
+    m_Space: 2147483647
+  m_Property:
+    name: DelayBeforeLoop
+    m_serializedType:
+      m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+  m_Direction: 0
+  m_LinkedSlots:
+  - {fileID: 114350483966675035}

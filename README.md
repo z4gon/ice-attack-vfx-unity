@@ -156,7 +156,8 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
     1. Make the Snow System a Sub Graph.
 
-1. **2nd and 3rd Bursts**
-    1. Copy and paste the systems used for the previous burst of texture, snow and ice.
-    1. Add delays to make these new bursts spawn delayed from the previous.
-    1. Parametrize configurations and then scale the parameters to make subsequent bursts larger.
+1. **2nd and 3rd Waves**
+    1. Make a new Sub Graph out of the whole that is using the 3 Sub Graphs. This will allow you to reuse it 3 times to make the 3 waves.
+    1. Parametrize the Delay and set it to _Before Loop_
+    1. Parametrize the position of the random box area for the spawning, each wave will need to spawn further ahead.
+    1. Parametrize all configurations related to particle count, spawn angle, particle size, etc, to make each subsequent wave bigger and different.
