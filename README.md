@@ -43,6 +43,10 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ![Spike Mesh Modeling](./docs/6-snow-mesh.gif)
 
+### Snow + Spike VFX
+
+![Snow VFX](./docs/7-snow-spike-vfx.gif)
+
 ---
 
 ## Implementation explained
@@ -127,7 +131,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
             1. Set a random size to make the spikes have different sizes.
             1. Make them scale over time along Z, to create the effect of them growing off the ground.
 
-    1. Group this system's components in the VFX Graph for readability.
+    1. Make the Spikes System a Sub Graph.
 
 
 1. **Snow Mesh**
@@ -150,6 +154,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
         1. In the **Initialize Particle** node of the VFX.
             1. Change the positions so that the snow is in the ground.
 
+    1. Make the Snow System a Sub Graph.
 
 1. **2nd and 3rd Bursts**
     1. Copy and paste the systems used for the previous burst of texture, snow and ice.
