@@ -10,6 +10,8 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ## Screenshots
 
+![Multi Colors](./docs/9-multi-colors.gif)
+
 ---
 ## Ground Textures
 
@@ -46,6 +48,12 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 ### Snow + Spike VFX
 
 ![Snow VFX](./docs/7-snow-spike-vfx.gif)
+
+---
+
+## 3 Waves
+
+![3 Waves](./docs/8-waves.gif)
 
 ---
 
