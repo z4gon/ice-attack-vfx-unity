@@ -37,6 +37,14 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ---
 
+## Snow Mesh
+
+### Blender 3D Modeling
+
+![Spike Mesh Modeling](./docs/6-snow-mesh.gif)
+
+---
+
 ## Implementation explained
 
 1. **Project configuration**
