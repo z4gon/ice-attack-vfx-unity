@@ -24,9 +24,16 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
 
 ![Spike Mesh Modeling](./docs/2-spike-mesh.gif)
 
----
+### Dissolve/Fresnel Shader
 
 [Burning Paper Effect by Gabriel Aguiar](https://www.youtube.com/watch?v=fgJf-gNq-1k)
+
+![Dissolve Shader](./docs/3-dissolve-fresnel.gif)
+![Dissolve Shader](./docs/4-spike-test.gif)
+
+### Spike VFX
+
+![Spike VFX](./docs/5-spikes.gif)
 
 ---
 
@@ -92,10 +99,11 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
             1. Set a random initial angle to make them face forward.
             1. Set a small randomness to the life time.
 
-    1. **Simple Dissolve Shader**
-        1. Create a **VFX Shader Graph** (not to be confused with a Shader Graph)
-        1. Enable _Alpha Clipping_
-        1. If this were a traditional Shader Graph, you'd need to set the blend mode to opaque here, but we can do that later in the output mesh node.
+    1. **Dissolve Shader**
+        1. Create a **Shader Graph**
+        1. The _Visual Effect_ as an active target is deprecated as of this Unity version. Just make sure the universal target of the shader graph has the option "Support VFX Graph" checked.
+        1. Enable _Alpha Clipping_.
+        1. Set surface type to Opaque.
         1. Using a random noise to make the material dissolve.
         1. Parametrize the color and alpha threshold.
         1. Add an fresnel effect and parametrize it too.
@@ -103,7 +111,7 @@ Using VFX Graph and Shader Graph in Unity **Unity 2021.3.10f1**
         1. In the **Output Particle Mesh** node of the VFX.
             > NOTE: The integration between VFX Graph and Shader Graph [is still experimental](https://forum.unity.com/threads/vfx-particle-mesh-material.975813/), so, you need to [enable experimental features for Visual Effects](https://learn.unity.com/tutorial/integrate-shader-graph-into-visual-effect-graph) to be able to use this.
             > Also, VFX Graph works using compute shaders, that means this will only work in URP compatible [devices that are also compute capable](https://forum.unity.com/threads/compute-shader-support-for-mobile-in-2022.1305024/).
-            1. Assign the **Dissolve Shader** VFX ShaderGraph Asset.
+            1. Assign the **Dissolve Shader** Asset.
             1. Make the dissolve evolve over time using a custom curve.
 
     1. **Size and Scale**
